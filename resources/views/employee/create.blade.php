@@ -53,13 +53,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <label for="email" class="control-label col-lg-3">E-mail:</label>
-                                        <div class="col-lg-5">
-                                            <input id="email" type="email" class="form-control" name="email" required placeholder="E-Mail Address should be unique">
-                                        </div>
-                                    </div>
-
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                         <label for="password" class="control-label col-lg-3">Password:</label>
                                         <div class="col-lg-5">

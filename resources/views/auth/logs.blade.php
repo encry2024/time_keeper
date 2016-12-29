@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-3 btn-group-vertical" role="group">
             <a href="{{ route('employee_index') }}" class="btn btn-default" style="text-align: left;">Manage Employees</a>
-            <a href="{{ route('history_log') }}" class="btn btn-default" style="text-align: left;">Time-in & Time-out History</a>
+            <a type="button" class="btn btn-default" style="text-align: left;">Time-in & Time-out Logs</a>
         </div>
         
         <div class="col-md-9">
@@ -15,7 +15,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>Today's Log</h2>
+                            <h2>Log History</h2>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@
                                 </table>
                             @else
                                 <div class="alert alert-danger" role="alert">
-                                    <strong>You have 0 records of Employees Logs</strong>
+                                    <strong>You have 0 records of Employees Logs History</strong>
                                 </div>
                             @endif
                             </div>

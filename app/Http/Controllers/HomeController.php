@@ -30,4 +30,13 @@ class HomeController extends Controller
 
         return view('home', compact('ctr', 'employeeLogs'));
     }
+
+    public function historyLogs()
+    {
+        $ctr = 0;
+        $employeeLogs = EmployeeLog::simplePaginate(10);
+        $employeeLogs->setPath('/history_logs');
+
+        return view('auth.logs', compact('ctr', 'employeeLogs'));
+    }
 }

@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['web', 'auth']], function() {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-
+    Route::get('/history_logs', 'HomeController@historyLogs')->name('history_log');
     // LOGBOOK
 
 
@@ -31,8 +31,6 @@ Route::group(['middleware' => ['web', 'auth']], function() {
         Route::get('/{employee}/profile', 'Employee\EmployeeController@employeeProfile')->name('employee_profile');
         Route::get('/{employee}/edit', 'Employee\EmployeeController@editEmployee')->name('edit_employee');
         Route::patch('/{employee}/update', 'Employee\EmployeeController@updateEmployee')->name('update_employee');
-
-        
     });
 });
 

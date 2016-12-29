@@ -18,7 +18,6 @@ class Employee extends Model
         $employee = new Employee();
         $employee->name = ucwords($createEmployeeRequest->get('name'), ' ');
         $employee->employee_id = strtoupper($createEmployeeRequest->get('employee_id'));
-        $employee->email = $createEmployeeRequest->get('email');
         $employee->sss_number = $createEmployeeRequest->get('sss_number');
         $employee->philhealth_number = $createEmployeeRequest->get('philhealth_number');
         $employee->pagibig_number = $createEmployeeRequest->get('pagibig_number');

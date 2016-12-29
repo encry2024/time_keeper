@@ -26,7 +26,6 @@ class CreateEmployeeRequest extends FormRequest
         return [
             'name'              => 'required',
             'employee_id'       => 'required|unique:employees,employee_id',
-            'email'             => 'required|email|unique:employees,email',
             'sss_number'        => array('unique:employees,sss_number', 'regex:/^[0-9]{2}[-][0-9]{7}[-][0-9]{1}$/i'),
             'philhealth_number' => array('unique:employees,philhealth_number', 'regex:/^[0-9]{2}[-][0-9]{9}[-][0-9]{1}$/i'),
             'pagibig_number'    => array('unique:employees,pagibig_number', 'regex:/^[0-9]{4}[-][0-9]{4}[-][0-9]{4}$/i'),
